@@ -1,4 +1,4 @@
-﻿using AngularJSAuthentication.Models;
+﻿using AngularJSAuthentication.API.Models;
 using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace AngularJSAuthentication.Controllers
+namespace AngularJSAuthentication.API.Controllers
 {
     [RoutePrefix("api/Account")]
     public class AccountController : ApiController

@@ -1,4 +1,4 @@
-﻿using AngularJSAuthentication.Models;
+﻿using AngularJSAuthentication.API.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace AngularJSAuthentication
+namespace AngularJSAuthentication.API
 {
     public class AuthRepository : IDisposable
     {
