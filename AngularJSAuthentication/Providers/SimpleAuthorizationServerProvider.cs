@@ -9,8 +9,6 @@ using System.Web;
 
 namespace AngularJSAuthentication.Providers
 {
-
-
     public class SimpleAuthorizationServerProvider : OAuthAuthorizationServerProvider
     {
         public override async Task ValidateClientAuthentication(OAuthValidateClientAuthenticationContext context)
@@ -20,8 +18,7 @@ namespace AngularJSAuthentication.Providers
 
         public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
-
-            context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
+            //context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
 
             using (AuthRepository _repo = new AuthRepository())
             {
